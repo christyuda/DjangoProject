@@ -1,0 +1,64 @@
+{% load static %}
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Judul}} | Blog</title>
+    <link rel="stylesheet" type="text/css "href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <h1 >{{h1}}</h1>
+    <h1 class="h1">Hi, This's my new project By 1204025 CHRISTIAN YUDA PRATAMA</h1>
+    <h1 class="green">this is a picture django</h1>
+    <h2 class="purple">Django was created in the fall of 2003</h2>
+    <h3 class="lightgreen">Django is a lightweight and standalone web server for development and testing </h3>
+    <a href="">ini link now lets Roll</a> <br>
+    <img src="{% static 'img/oip.jpg' %}" alt=""> <br>
+    <a href="{{Judul}}">{{h1}}</a>
+    <ul>
+        {%for href, item in menu%}
+        <li>
+            <a href="{{href}}">{{item}}</a>
+        </li>
+        {% endfor %}
+    </ul>    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" type="text/css "href="{% static 'css/style.css'%}"></head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="https://ulbi.ac.id">Home</a></li>
+                <li><a href="#">Tentang Saya</a></li>
+                <li><a href="#">Riwayat</a></li>
+               
+            </ul>
+            <a href="#" class="btn">Like me</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">Django Testing Projek</span>
+            <h1>Hello, I’m <span>Christian Yuda Pratama</span></h1>
+            <h1>NPM 1204025</h1>
+            <p>saya mempelajari django hanya dalam 1 bulan </p>
+            <img width="34%" src="{% static 'img/yuda.jpg' %}" alt=""> <br>
+
+            <a href="#" class="btn">Like Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
