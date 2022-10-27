@@ -1,0 +1,45 @@
+{% block content-1 %}
+{%for v in post %}
+<div clas="bg-white" style="height: 200px;">
+ 
+    {% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" type="text/css "href="{% static 'css/style.css'%}"></head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="https://ulbi.ac.id">Home</a></li>
+                <li><a href="#">Tentang Saya</a></li>
+                <li><a href="#">Riwayat</a></li>
+               
+            </ul>
+            <a href="#" class="btn">Like me</a>
+        </nav>
+
+        <div class="content">
+            <h1>{{v.title}}</h1>
+            <p>{{v.post}}</p>
+            <span class="title">Django Testing Projek</span>
+            <h1>Hello, I’m <span>Christian Yuda Pratama</span></h1>
+            <h1>NPM 1204025</h1>
+            <p>saya mempelajari django hanya dalam 1 bulan </p>
+            <img width="34%" src="{% static 'img/yuda.jpg' %}" alt=""> <br>
+
+            <a href="#" class="btn">Like Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
+</div>
+{% endfor %}
+{% endblock content-1 %}
