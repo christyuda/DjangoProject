@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
 def index(request):
     context = {
         'Judul' : 'blog1',
@@ -14,3 +13,8 @@ def recent(request):
         'h1' : 'Python'
     } 
     return render (request,'blog/wiw.html', context)
+
+
+
+def article(request, year):
+    return HttpResponse(f"{year}")

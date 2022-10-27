@@ -18,7 +18,8 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index),
-    path('blog/', include(('blog.urls', 'blog'), 'blog'), name='blog')
-]
+
+        path('', views.index),
+        path('addpost/', views.form_post, name='add post')
+
+   ]

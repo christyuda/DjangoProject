@@ -1,0 +1,43 @@
+ 
+    {% load static %}
+    <div clas="bg-white" style="height: 200px;">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" type="text/css "href="{% static 'css/style.css'%}"></head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="https://ulbi.ac.id">Home</a></li>
+                <li><a href="#">Tentang Saya</a></li>
+                <li><a href="#">Riwayat</a></li>
+               
+            </ul>
+            <a href="#" class="btn">Like me</a>
+        </nav>
+
+        <div class="content">
+            <div>
+                {% block content-1 %}
+                    {% for v in post %}
+                        <h3>{{ v.title }}</h3>
+                        <p>{{ v.blog }}</p>
+                    {% endfor %}
+            
+            
+                {% endblock content-1 %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+</div>
